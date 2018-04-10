@@ -1,0 +1,69 @@
+{
+    "name": "datlv/laravel-file",
+    "description": "Laravel File Package",
+    "keywords": [
+        "datlv",
+        "laravel",
+        "file"
+    ],
+    "homepage": "https://github.com/Datlv/laravel-file",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Datlv",
+            "email": "datle2011@gmail.com",
+            "homepage": "http://Datlv.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/datlv/laravel-authority.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://gitlab.com/datlv/laravel-kit.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/datlv/laravel-user.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/datlv/laravel-setting.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "datlv/laravel-kit": "dev-master"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.5",
+        "orchestra/database": "~3.5",
+        "nunomaduro/collision": "^1.1",
+        "datlv/laravel-authority": "dev-master",
+        "datlv/laravel-user": "dev-master",
+        "datlv/laravel-setting": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datlv\\File\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datlv\\File\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Datlv\\File\\ServiceProvider"
+            ]
+        }
+    }
+}
